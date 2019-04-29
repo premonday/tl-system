@@ -12,4 +12,13 @@ const mix = require('laravel-mix');
  */
 
 mix.js('resources/js/app.js', 'public/js')
-   .sass('resources/sass/app.scss', 'public/css');
+    .js('resources/global/js/bootstrap.js', 'public/js')
+    .sass('resources/global/sass/app.scss', 'public/css')
+    .browserSync({
+        proxy: '127.0.0.1:8000/',
+        notify: false
+    })
+    .copyDirectory('resources/img', 'public/img')
+    .copyDirectory('resources/global/img', 'public/global/img')
+    .copyDirectory('resources/global/views', 'resources/views')
+    .version();

@@ -1,0 +1,3 @@
+[submodule "resources/global"]
+	path = resources/global
+	url = git@github.com:premonday/Tierlist-Theme.git
