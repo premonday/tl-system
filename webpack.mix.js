@@ -20,5 +20,4 @@ mix.js('resources/js/app.js', 'public/js')
     })
     .copyDirectory('resources/img', 'public/img')
     .copyDirectory('resources/global/img', 'public/global/img')
-    .copyDirectory('resources/global/views', 'resources/views')
     .version();
