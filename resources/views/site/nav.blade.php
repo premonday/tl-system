@@ -10,11 +10,12 @@
     @endslot
 
     @slot('navLinks')
-        <li><a href="#">Home</a></li>
-        <li><a href="#" class="active">Active Page</a></li>
+        <li><a href="#" class="active">Tier List</a></li>
+        <li><a href="#">DLC Characters</a></li>
     @endslot
 
     @slot('navExtra')
         <li class="d-none d-sm-inline-block"><a href="#" class="active">Active link</a></li>
     @endslot
 @endcomponent
+

@@ -9,7 +9,7 @@
 
 @section('hero')
     @component('g.partials.hero.home-1')
-        @slot('class') hero-size-2 @endslot
+        @slot('class') hero-size-3 shapes @endslot
         @slot('hero') https://mk11.tierlist.gg/img/hero.jpg @endslot
         @slot('bgpos') 50% 20% @endslot
         @slot('title') Mortal Kombat 11 Best Characters Tier List @endslot
@@ -20,29 +20,31 @@
 @section('content')
     @component('g.layouts.content-sidebar')
         @slot('content')
-            <h2>Global template header</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam, enim esse est ex expedita facere fugiat harum itaque iure laudantium quibusdam quisquam quos saepe sequi similique soluta velit veritatis.</p>
-            <hr class="my-4">
-            <div class="row">
-                <div class="col-sm-6">
-                    <h4>Header</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, cumque dicta dolor excepturi exercitationem, explicabo fuga incidunt nesciunt perspiciatis placeat quas similique suscipit, veniam. Ab eligendi et laboriosam quo! Harum!</p>
-                </div>
-                <div class="col-sm-6">
-                    <h4>Header</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, cumque dicta dolor excepturi exercitationem, explicabo fuga incidunt nesciunt perspiciatis placeat quas similique suscipit, veniam. Ab eligendi et laboriosam quo! Harum!</p>
-                </div>
-            </div>
+            @include('test-content.mk11')
         @endslot
         @slot('sidebar')
+
+            @include('g.components.login-register-sidebar')
+            @include('g.ads.300x250-unit')
             <div class="m-4">
                 <h3>Share on social</h3>
                 @include('g.components.social-share')
             </div>
-
-            @include('g.components.login-register-sidebar')
         @endslot
     @endcomponent
+
+    <div class="test-area" style="position:fixed; bottom:0; width:100%; padding:20px; background:black;">
+        Hero Sizes:
+        <button id="hero-s1">Regular</button>
+        <button id="hero-s2">Size 2</button>
+        <button id="hero-s3">Size 3</button>
+         |
+        <button id="hero-shapes">Toggle: Hero Shapes</button>
+        |
+        <button id="hero-fade">Toggle: Hero Fade</button>
+        |
+        <button id="hero-overlap">Toggle: Hero Overlap</button>
+    </div>
 
 @endsection
 
