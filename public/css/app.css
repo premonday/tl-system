@@ -11384,6 +11384,7 @@ hr {
 #tierlist-main {
   position: relative;
   z-index: 10;
+  overflow: hidden;
   margin: 0 auto;
   width: 100%;
 }
@@ -12573,7 +12574,12 @@ h1.size-head,
   background-size: cover;
   overflow: hidden;
   padding: 139.1px 0 53.5px;
-  margin-bottom: 40px;
+}
+
+@media (min-width: 800px) {
+  .home-hero-1 {
+    margin-bottom: 40px;
+  }
 }
 
 .home-hero-1.overlap {
@@ -12626,12 +12632,16 @@ h1.size-head,
   height: auto;
 }
 
-.home-hero-1.hero-size-2 .home-hero-1-container {
-  padding: 80px 0;
+@media (min-width: 800px) {
+  .home-hero-1.hero-size-2 .home-hero-1-container {
+    padding: 80px 0;
+  }
 }
 
-.home-hero-1.hero-size-3 .home-hero-1-container {
-  padding: 130px 0;
+@media (min-width: 800px) {
+  .home-hero-1.hero-size-3 .home-hero-1-container {
+    padding: 130px 0;
+  }
 }
 
 .shapes .home-hero-1-shape-right:before,
@@ -13437,7 +13447,20 @@ nav.tierlist-nav ul li a:hover {
 }
 
 .content-block {
-  padding: 30px;
+  padding: 20px;
+}
+
+@media (min-width: 800px) {
+  .content-block {
+    padding: 30px;
+  }
+}
+
+.content-block-image {
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: 50%;
 }
 
 .sticky-bottom {
