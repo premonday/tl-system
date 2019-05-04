@@ -19,11 +19,11 @@
 
 @section('content')
 
-    <div class="container">
-        <div class="row mb-5">
+    <div class="container side-scroll-container">
+        <div class="row mb-1 mb-lg-4 side-scroll-row-1050">
             @component('g.partials.content.block')
                 @slot('image') https://placehold.it/200x300 @endslot
-                @slot('block') col-lg-4 mb-3 @endslot
+                @slot('block') col-4 mb-3 @endslot
                 @slot('class') bg-dark3 @endslot
                 @slot('content')
                     <h2>Test Block</h2>
@@ -34,7 +34,7 @@
             @endcomponent
             @component('g.partials.content.block')
                 @slot('image') https://placehold.it/200x300 @endslot
-                @slot('block') col-lg-4 mb-3 @endslot
+                @slot('block') col-4 mb-3 @endslot
                 @slot('class') bg-dark3 @endslot
                 @slot('content')
                     <h2>Test Block</h2>
@@ -45,7 +45,7 @@
             @endcomponent
             @component('g.partials.content.block')
                 @slot('image') https://placehold.it/200x300 @endslot
-                @slot('block') col-lg-4 mb-3 @endslot
+                @slot('block') col-4 mb-3 @endslot
                 @slot('class') bg-dark3 @endslot
                 @slot('content')
                     <h2>Test Block</h2>
@@ -76,18 +76,18 @@
         @endslot
     @endcomponent
 
-    <div class="test-area" style="position:fixed; bottom:0; width:100%; padding:20px; background:black;">
-        Hero Sizes:
-        <button id="hero-s1">Regular</button>
-        <button id="hero-s2">Size 2</button>
-        <button id="hero-s3">Size 3</button>
-         |
-        <button id="hero-shapes">Toggle: Hero Shapes</button>
-        |
-        <button id="hero-fade">Toggle: Hero Fade</button>
-        |
-        <button id="hero-overlap">Toggle: Hero Overlap</button>
-    </div>
+    {{--<div class="test-area" style="position:fixed; bottom:0; width:100%; padding:20px; background:black;">--}}
+        {{--Hero Sizes:--}}
+        {{--<button id="hero-s1">Regular</button>--}}
+        {{--<button id="hero-s2">Size 2</button>--}}
+        {{--<button id="hero-s3">Size 3</button>--}}
+         {{--|--}}
+        {{--<button id="hero-shapes">Toggle: Hero Shapes</button>--}}
+        {{--|--}}
+        {{--<button id="hero-fade">Toggle: Hero Fade</button>--}}
+        {{--|--}}
+        {{--<button id="hero-overlap">Toggle: Hero Overlap</button>--}}
+    {{--</div>--}}
 
 @endsection
 

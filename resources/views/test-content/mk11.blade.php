@@ -26,7 +26,7 @@
 
 <div class="row">
     @component('g.partials.content.block')
-        @slot('block') mb-3 @endslot
+        @slot('block') col-12 mb-3 @endslot
         @slot('class') bg-black @endslot
         @slot('content')
                 <div class="text-primary">A note about the Tier List</div>

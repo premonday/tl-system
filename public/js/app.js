@@ -17792,48 +17792,26 @@ __webpack_require__(/*! ./bootstrap */ "./resources/global/js/bootstrap.js"); //
 
 $('.mobile-button-holder').on('click', function () {
   var $this = $(this);
-  var $menu = $('.mobile-menu');
-  var $activeWindowHeight = $menu.height() + $menu.offset().top;
 
   if ($this.hasClass('mobile-menu-active')) {
     $this.removeClass('mobile-menu-active');
     $('body').removeClass('mobile-menu-active');
-    $('#app').css({
-      'height': 'auto'
-    });
   } else {
     $this.addClass('mobile-menu-active');
     $('body').addClass('mobile-menu-active');
-    $('#app').css({
-      'height': $activeWindowHeight
-    });
   }
 });
 $('.global-site-switcher').on('click', function () {
   $(this).toggleClass('switcher-open');
-});
-$t = $('.home-hero-1');
-$('#hero-s1').on('click', function () {
-  $t.addClass('hero-size-auto');
-  $t.removeClass('hero-size-2').removeClass('hero-size-3');
-});
-$('#hero-s2').on('click', function () {
-  $t.addClass('hero-size-2');
-  $t.removeClass('hero-size-auto').removeClass('hero-size-3');
-});
-$('#hero-s3').on('click', function () {
-  $t.addClass('hero-size-3');
-  $t.removeClass('hero-size-2').removeClass('hero-size-auto');
-});
-$('#hero-shapes').on('click', function () {
-  $t.toggleClass('shapes');
-});
-$('#hero-fade').on('click', function () {
-  $t.toggleClass('faded');
-});
-$('#hero-overlap').on('click', function () {
-  $t.toggleClass('overlap');
-}); // VUE STUFF
+}); // $t = $('.home-hero-1');
+// $('#hero-s1').on('click', function(){ $t.addClass('hero-size-auto'); $t.removeClass('hero-size-2').removeClass('hero-size-3'); });
+// $('#hero-s2').on('click', function(){ $t.addClass('hero-size-2'); $t.removeClass('hero-size-auto').removeClass('hero-size-3'); });
+// $('#hero-s3').on('click', function(){ $t.addClass('hero-size-3'); $t.removeClass('hero-size-2').removeClass('hero-size-auto'); });
+//
+// $('#hero-shapes').on('click', function(){ $t.toggleClass('shapes'); });
+// $('#hero-fade').on('click', function(){ $t.toggleClass('faded'); });
+// $('#hero-overlap').on('click', function(){ $t.toggleClass('overlap'); });
+// VUE STUFF
 // window.Vue = require('vue');
 //
 // Vue.component('TierlistNav', require('./components/TierlistNav.vue').default);

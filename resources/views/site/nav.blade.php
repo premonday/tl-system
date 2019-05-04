@@ -14,6 +14,10 @@
         <li><a href="#">DLC Characters</a></li>
     @endslot
 
+    @slot('promoLink')
+        <li><a href="#">Enter a different giveaway</a></li>
+        @endslot
+
     @slot('navExtra')
         <li class="d-none d-sm-inline-block"><a href="#" class="active">Active link</a></li>
     @endslot
