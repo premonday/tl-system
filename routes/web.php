@@ -11,6 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', function () { return view('welcome');} );
+Route::get('/tabs', function () { return view('tabs');} );
+Route::get('/news', function () { return view('news');} );
+
+// News
+Route::get('/news', 'News\\NewsController@index')->name('news-index');
+Route::get('/news/{post}', 'News\\NewsController@post')->name('news-post');

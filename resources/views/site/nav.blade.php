@@ -10,8 +10,9 @@
     @endslot
 
     @slot('navLinks')
-        <li><a href="#" class="active">Tier List</a></li>
-        <li><a href="#">DLC Characters</a></li>
+        <li><a href="/" class="{{ request()->is('/') ? 'active' : '' }}">Tier List</a></li>
+        <li><a href="/tabs" class="{{ request()->is('tabs') ? 'active' : '' }}">Page with tabs</a></li>
+        <li><a href="/news" class="{{ request()->is('news*') ? 'active' : '' }}">News</a></li>
     @endslot
 
     @slot('promoLink')
