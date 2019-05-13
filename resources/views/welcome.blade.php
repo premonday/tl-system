@@ -64,7 +64,7 @@
         @slot('sidebar')
 
             @include('g.components.login-register-sidebar')
-            @include('g.ads.300x250-unit')
+            @include('g.ads.300x250')
             @component('g.partials.content.block')
                 @slot('block') p-0 mt-3 @endslot
                 @slot('class') bg-dark3 @endslot
