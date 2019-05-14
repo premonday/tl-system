@@ -63,31 +63,9 @@
         @endslot
         @slot('sidebar')
 
-            @include('g.components.login-register-sidebar')
-            @include('g.ads.300x250')
-            @component('g.partials.content.block')
-                @slot('block') p-0 mt-3 @endslot
-                @slot('class') bg-dark3 @endslot
-                @slot('content')
-                    <h3>Share on social</h3>
-                    @include('g.components.social-share')
-                @endslot
-            @endcomponent
+            @include('site.sidebar')
         @endslot
     @endcomponent
-
-    {{--<div class="test-area" style="position:fixed; bottom:0; width:100%; padding:20px; background:black;">--}}
-        {{--Hero Sizes:--}}
-        {{--<button id="hero-s1">Regular</button>--}}
-        {{--<button id="hero-s2">Size 2</button>--}}
-        {{--<button id="hero-s3">Size 3</button>--}}
-         {{--|--}}
-        {{--<button id="hero-shapes">Toggle: Hero Shapes</button>--}}
-        {{--|--}}
-        {{--<button id="hero-fade">Toggle: Hero Fade</button>--}}
-        {{--|--}}
-        {{--<button id="hero-overlap">Toggle: Hero Overlap</button>--}}
-    {{--</div>--}}
 
 @endsection
 

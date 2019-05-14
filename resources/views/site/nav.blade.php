@@ -16,6 +16,7 @@
 
     @slot('navLinks')
         <li><a href="/" class="{{ request()->is('/') ? 'active' : '' }}">Tier List</a></li>
+        <li><a href="/ads" class="{{ request()->is('ads*') ? 'active' : '' }}">Ads</a></li>
         <li><a href="/tabs" class="{{ request()->is('tabs') ? 'active' : '' }}">Page with tabs</a></li>
         <li><a href="/articles" class="{{ request()->is('news*') ? 'active' : '' }}">News</a></li>
     @endslot
