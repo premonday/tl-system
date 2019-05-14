@@ -11833,16 +11833,24 @@ h1.size-head,
   padding: 4px 10px;
 }
 
-.btn-primary {
-  background: rgba(255, 255, 255, 0.85);
-  color: #4E5261;
-  border: 2px solid #fff;
+.btn:focus,
+.btn:not(:disabled):not(.disabled):active {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3) !important;
 }
 
-.btn-primary:hover {
+.btn-primary {
   background: #fff;
   color: #7A5AF9;
   border: 2px solid #fff;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary:not(:disabled):not(.disabled):active {
+  background: #7A5AF9;
+  color: #fff;
+  border: 2px solid #8e73fa;
 }
 
 .btn-secondary {
@@ -11851,7 +11859,10 @@ h1.size-head,
   border: 2px solid #7A5AF9;
 }
 
-.btn-secondary:hover {
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary:active,
+.btn-secondary:not(:disabled):not(.disabled):active {
   background: #7A5AF9;
   color: #fff;
   border: 2px solid #7A5AF9;

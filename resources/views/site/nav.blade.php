@@ -3,7 +3,7 @@
         @component('g.partials.forms.search')
             @slot('action') /action @endslot
             @slot('placeholder') Placeholder goes here @endslot
-            @slot('style') width:300px; @endslot
+            @slot('style') width:250px; @endslot
             @endcomponent
     @endslot
     @slot('headerButtons')
