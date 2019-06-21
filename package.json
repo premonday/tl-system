@@ -26,6 +26,7 @@
         "vue-template-compiler": "^2.6.10"
     },
     "dependencies": {
+        "js-cookie": "^2.2.0",
         "vue-table-component": "^1.9.2"
     }
 }
